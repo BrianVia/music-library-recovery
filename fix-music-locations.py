@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 
 def main():
 # read an XML file
+    # Relative path to an XML export of your library with the wrong file locations
     with(open("./rekordbox-collection-wrong-file-location-2022-10-24.xml")) as f:
         data = f.read()
         Bs_data = BeautifulSoup(data, "xml")
